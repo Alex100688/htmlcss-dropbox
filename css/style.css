@@ -1,7 +1,15 @@
 /* reset */
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
 /* reset */
 
 /* common */
+body{
+    font-family: 'Open Sans', sans-serif;
+}
 /* common */
 
 /* button */
