@@ -10,6 +10,17 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
+.big-container{
+    width:1200px;
+    margin: auto;
+}
+.small-container{
+    width:1000px;
+    margin:auto;
+}
+.row-flex{
+    display: flex;
+}
 /* common */
 
 /* button */
