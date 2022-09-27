@@ -108,6 +108,12 @@ h4{
     border: none;
     
 }
+.brt-white{
+    width: 180px;
+    height: 30px;
+    background-color: white;
+    border: 0.5px solid black;
+}
 /* button */
 
 /* header */
@@ -225,6 +231,8 @@ h4{
 .team{
     text-align: center;
     border: 1px solid lightgray;
+    padding: 20px 0;
+    
     
 }
 .contact{
@@ -251,6 +259,10 @@ h4{
 }
 .special-p{
     margin-top: 20px;
+    margin-left: 43px;
+}
+.button-partner{
+    margin-top: 28px;
     margin-left: 43px;
 }
    
