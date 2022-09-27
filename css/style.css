@@ -25,33 +25,33 @@ body{
     text-align: center;
     border: 1px solid lightgrey;
     padding-top: 25px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     
 }
 .price-rate{
     font-weight: bold;
     display: inline-block;
     margin-top: 18px;
-    padding-left: 10px;
+    padding-left: 15px;
    
 }
 .mouth-price{
     color: #7f6b66;
     margin-top: 10px;
-    padding-left: 10px;
+    padding-left: 15px;
 }
 .special-user{
     display: flex;
-    padding-left: 10px;
+    padding-left: 15px;
     margin-top:60px
 }
 .number-user{
-    padding-left: 8px;
+    padding-left: 12px;
     
 }
 .buy-rate{
     margin-top: 20px;
-    padding-left: 20px;
+    padding-left: 25px;
     
 }
 h1{
@@ -69,13 +69,13 @@ h3{
     font-size: 25px;
     font-weight: bold;
     margin-top: 20px;
-    padding-left: 10px;
+    padding-left: 15px;
 }
 h4{
     font-size: 18px;
     font-weight: bold;
     margin-top: 60px;
-    padding-left: 10px;
+    padding-left: 15px;
 }
 .information::before{
     content: "\2714";
@@ -84,12 +84,12 @@ h4{
       
 }
 .information{
-    padding-left: 10px;
+    padding-left: 15px;
     margin-top: 30px;
    
 }
 .special-padding{
- padding-left: 20px;
+ padding-left: 25px;
 }
 
 
@@ -214,6 +214,32 @@ h4{
     margin-right: 20px;
     margin-top: 50px;
 }
+
+.special{
+    border: 1px solid lightgray;
+    margin-top: 60px;
+}
+.team{
+    text-align: center;
+    border: 1px solid lightgray;
+    padding:10px 0;
+}
+.contact{
+    font-weight: bold;
+    margin-top: 20px;
+    padding-left: 15px;
+}
+.solution{
+    font-size: 14px;
+    margin-top: 40px;
+    padding-left: 15px;
+    padding-bottom: 40px;
+}
+.office-button{
+    margin-bottom: -15px;
+    margin-left: 170px;
+}
+
 
    
 /* main */
