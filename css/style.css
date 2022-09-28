@@ -80,6 +80,7 @@ h4{
     font-size: 18px;
     font-weight: bold;
     margin-top: 60px;
+    line-height: 70px;
     padding-left: 15px;
 }
 .information::before{
@@ -383,8 +384,8 @@ strong{
     font-size: 18px;
 }
 
-i{
-    margin-left:450px;
+.check-question{
+    margin-left: 450px;
 }
 /* main */
 
@@ -398,12 +399,34 @@ footer{
     width: calc(100% / 5 );
     color: white;
     margin-left: 10px;
+    margin-top: 20px;
+}
+
+.title-link{
+    line-height: 110px;
+    
 }
 a{
     text-decoration: none;
     color: inherit;
-    line-height: 35px;
+    line-height: 45px;
     margin-left: 15px;
-    margin-top: 80px;
+    
+}
+.link-footer.footer-special{
+    margin-bottom: 150px;
+}
+.list-link{
+    list-style: none;
+}
+.hr-link{
+    margin-top: 150px;
+    margin-bottom: 40px;
+    
+}
+.italy-link{
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 10px
 }
 /* footer */
