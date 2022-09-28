@@ -11,7 +11,7 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 .big-container{
-    max-width:1200px;
+    max-width:1100px;
     margin: auto;
 }
 .small-container{
@@ -20,6 +20,9 @@ body{
 }
 .row-flex{
     display: flex;
+}
+.row-wrap{
+    flex-wrap: wrap;
 }
 .rate{
     text-align: center;
@@ -94,6 +97,7 @@ h4{
 
 .picture{
     width: 100%;
+    display: block;
 }
 
 /* common */
@@ -196,9 +200,7 @@ h4{
     top: 100px;   
  }
  
-.jumbo{
-    width: 100%;
-}
+
 .radio-main{
     margin-top: 20px;
 }
@@ -264,6 +266,15 @@ h4{
 .button-partner{
     margin-top: 28px;
     margin-left: 43px;
+}
+.row-wrap .operation-main{
+    width: calc(100% / 3 - 60px);
+    margin: 60px 30px; 
+}
+.operation-p{
+    margin-top: 22px;
+    margin-bottom: 30px;
+    margin-left: 15px;
 }
    
 /* main */
