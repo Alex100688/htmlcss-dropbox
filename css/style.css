@@ -65,7 +65,7 @@ h1{
     margin-top: 40px;
 }
 h2{
-    font-size: 40px;
+    font-size: 35px;
     font-weight:900;
     padding-top: 40px;
     margin-top: 80px;
@@ -101,7 +101,9 @@ h4{
     width: 100%;
     display: block;
 }
-
+hr{
+    margin-top: 50px;
+}
 /* common */
 
 /* button */
@@ -302,6 +304,9 @@ h4{
     height: 50%;
     
 }
+.in-special-container.center{
+    width: 100%;
+}
 
 .in-special-container.partners{
     display: flex;
@@ -347,6 +352,40 @@ h4{
 }
 #yellow{
     background-color: #ffd830;
+}
+.under-partners{
+    background-color: #b4d0e7;
+    padding-bottom: 80px;
+}
+
+.under-flex{
+    justify-content: space-between;
+}
+.under-box{
+    margin-top:25px;
+    margin-bottom: 80px;
+    padding-left: 25px;
+   color:#61082b;
+}
+.partners-button{
+    align-items: center;
+    margin-top: 65px;
+    border: none;
+    margin-right:  25px;
+}
+
+    
+
+.questions{
+   margin-top: 50px;
+   
+}
+strong{
+    font-size: 18px;
+}
+
+i{
+    margin-left:450px;
 }
 /* main */
 
