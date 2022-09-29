@@ -11,54 +11,19 @@ body{
     font-family: 'Open Sans', sans-serif;
     height: 200vh;   
 }
+
+/* container */
 .big-container{
-    max-width:1200px;
+    max-width:1100px;
     margin: auto;
 }
 .small-container{
     max-width:950px;
     margin:auto;
 }
+/* /container */
 
-.row-flex{
-    display: flex;
-}
-.row-wrap{
-    flex-wrap: wrap;
-}
-.rate{
-    text-align: center;
-    border: 1px solid lightgrey;
-    padding-top: 25px;
-    padding-bottom: 20px;
-    
-}
-.price-rate{
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 18px;
-    padding-left: 15px;
-   
-}
-.mouth-price{
-    color: #7f6b66;
-    margin-top: 10px;
-    padding-left: 15px;
-}
-.special-user{
-    display: flex;
-    padding-left: 15px;
-    margin-top:60px
-}
-.number-user{
-    padding-left: 12px;
-    
-}
-.buy-rate{
-    margin-top: 20px;
-    padding-left: 25px;
-    
-}
+/* titles */
 h1{
     font-size: 50px;
     font-weight:900;
@@ -83,28 +48,40 @@ h4{
     line-height: 70px;
     padding-left: 15px;
 }
-.information::before{
-    content: "\2714";
-    font-weight: bold;
-    color: #0061ff;
-      
+/* /titles */
+
+/* rules flex */
+.row-flex{
+    display: flex;
 }
-.information{
-    padding-left: 15px;
-    margin-top: 30px;
-   
+.row-wrap{
+    flex-wrap: wrap;
 }
-.special-padding{
- padding-left: 25px;
+/* /rules flex */
+
+/* box-container */
+.small-box{
+    width: 40%;
+    
 }
 
+.big-box{
+    width: 60%; 
+}
+/* /box-container */
+
+/* rules for img */
 .picture{
     width: 100%;
     display: block;
 }
+/* /rules for img */
+
+/* rules for hr */
 hr{
     margin-top: 50px;
 }
+/* /rules for hr */
 /* common */
 
 /* button */
@@ -115,99 +92,164 @@ hr{
     background-color: #0061ff;
     color: white;
     border: none;
-    
 }
+.brt-blue:hover {background-color:#0061ff}
+
+.brt-blue:active {
+    background-color:#0061ff; ;
+    transform: translateY(4px);
+}
+
 .brt-white{
     width: 180px;
     height: 30px;
     background-color: white;
     border: 0.5px solid black;
 }
+
+.brt-white:hover {background-color:white}
+
+.brt-white:active {
+    background-color:white; ;
+    transform: translateY(4px);
+}
 /* button */
 
 /* header */
-
-  
-
- .header-top{
+.header-top{
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-    padding-top: 20px;
-    padding-bottom: 30px;
- }
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
-     .logo{
-        padding-left: 30px;
-     }
+.logo{
+    padding-left: 30px;
+}
+
+.row-flex .list {
+    display: flex;       
+}
+
+.list-logo, .list-logo-left{
+    list-style: none;      
+}
+
+.list-logo{
+    padding-right: 80px;
+}
+
+.list-logo-left{
+    padding-right: 45px;
     
-   .row-flex .list {
-        display: flex;
-        
-    }
-    .list-logo, .list-logo-left{
-        list-style: none;
-        
-    }
-    .list-logo{
-        padding-right: 80px;
-    }
-    .list-logo-left{
-        padding-right: 45px;
-       
-    }
-    .list a{
-        text-decoration: none;
-        color:inherit
-    }
+}
+
+.list a{
+    text-decoration: none;
+    color:inherit
+}
 /* header */
 
 /* main */
+/* rules for first section */
+
 .hero{
     background-color:#b4d0e7;
     padding-top: 10px;
-    margin-top: 20px;
-    
+    margin-top: 20px;    
 }
 
 
-.small-box{
-    width: 40%;
-        
-}
 .left-box{
-    margin-top: 60px;
-    
-   
+    margin-top: 60px;       
 }
+
 .hero-button{
     width:200px;
     height: 30px;
     margin-top: 20px;
 }
- .hero-under{
+
+.hero-under{
     margin-top: 20px;
- }
- .fa-solid.fa-arrow-down {
+}
+
+.fa-solid.fa-arrow-down {
     font-size: 35px;
     margin-top: 60px;
     padding-bottom: 15px;
     position: absolute;
-    bottom: -50px;
-    
- }
+    bottom: -30px;   
+}
 
- .big-box{
-    width: 60%; 
- }
- .under-hero{
+.under-hero{
     padding-top: 40px;
- }
- .box-right{
-   position: relative;
-   bottom: -60px;
- }
- 
+}
+
+.box-right{
+    position: relative;
+    bottom: -60px;
+}
+/* /rules for first section */
+
+/* rules for second section */
+.check-blue {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.check-blue input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.check-blue:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.check-blue input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.check-blue:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check-blue input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.check-blue .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
 
 .radio-main{
     margin-top: 20px;
@@ -219,15 +261,47 @@ hr{
     display: inline-block;
     padding-left:85px;
 }
+
 .main-rates{
-    margin-top: 40px;
-    
-    
+    margin-top: 40px;   
 }
+
 .main-rate{
     width: calc(100% / 3  );
     margin: 0 20px;
     border: 1px solid lightgray;
+}
+
+.rate{
+    text-align: center;
+    border: 1px solid lightgrey;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    
+}
+
+.price-rate{
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 18px;
+    padding-left: 15px;
+    
+}
+
+.mouth-price{
+    color: #7f6b66;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+.special-user{
+    display: flex;
+    padding-left: 15px;
+    margin-top:60px
+}
+
+.number-user{
+    padding-left: 12px;    
 }
 
 .user-button{
@@ -236,74 +310,115 @@ hr{
     margin-top: 50px;
 }
 
+.buy-rate{
+    margin-top: 20px;
+    padding-left: 25px;    
+}
+
+.information::before{
+    content: "\2714";
+    font-weight: bold;
+    color: #0061ff;    
+}
+
+.information{
+    padding-left: 15px;
+    margin-top: 30px;    
+}
+
+.special-padding{
+    padding-left: 25px;
+}
+/* /rules for second section */
+
+/* rules for third section */
 .special{
     border: 1px solid lightgray;
     margin-top: 60px;
 }
+
 .team{
     text-align: center;
     border: 1px solid lightgray;
-    padding: 20px 0;
-    
+    padding: 20px 0;    
     
 }
+
 .contact{
     font-weight: bold;
     margin-top: 20px;
     padding-left: 15px;
 }
+
 .solution{
     font-size: 14px;
     margin-top: 40px;
     padding-left: 15px;
     padding-bottom: 40px;
 }
+
 .office-button{
     margin-bottom: -15px;
     margin-left: 170px;
 }
-.partner{
+/* /rules for third section */
+
+/* rules for fourth section */
+.contacts-dropbox{
     margin-top: 80px;
 }
+
 .special-h3{
     margin-top: 160px;
     margin-left: 30px;
 }
+
 .special-p{
     margin-top: 20px;
     margin-left: 43px;
 }
-.button-partner{
+
+.button-contacts{
     margin-top: 28px;
-    margin-left: 20px;
-   
+    margin-left: 20px;   
 }
+/* /rules fourth section */
+
+/* rules for fifth section */
+.h2-fifth-section{
+    margin-left:40px;
+}
+
 .row-wrap .operation-main{
     width: calc(100% / 3 - 60px);
-    margin: 30px 30px; 
+    margin: 60px 30px; 
 }
+
 .operation-p{
     margin-top: 22px;
     margin-bottom: 30px;
     margin-left: 15px;
 }
+
 .business-main{
     margin-top:40px;
     margin-bottom: 20px;
 }
+/* /rules for firth section */
+
+/* rules for sixth section */
 .special-container{
     display: flex;
     flex-wrap: wrap;
     width: calc(100vw /3);
     height: calc(100vw /3);
-    
-
 }
+
 .in-special-container{
     width: 50%;
-    height: 50%;
-    
+    height: 50%;    
 }
+
 .in-special-container.center{
     width: 100%;
 }
@@ -312,6 +427,7 @@ hr{
     display: flex;
     align-items: center;
 }
+
  .special-center{
     overflow-y: auto;
     background-color: #f5f5f5; 
@@ -322,29 +438,36 @@ hr{
 }
 .p-designit{
     margin-top: 40px;
-    padding-left: 30px;
-    
+    padding-left: 30px;    
 }
 
-#light-green{
-    background-color: #a2d39b;
-}
 .filter-img{
     filter: invert(1);
 }
+/* id for sixth section */
+#light-green{
+    background-color: #a2d39b;
+    box-shadow:20px 20px 50px 15px #d1e9cd;
+}
+
 #fucsia{
     background-color: #61082b;
 }
+
 #blue{
     background-color: #0093ce;
 }
+
 #red{
     background-color: #ff1c1c;
 }
+
 #dark-red{
     background-color:#d5001f;
 }
+
 #light-blue{
+   
     background-color: #b4d0e7;
 }
 #dark-blue{
@@ -353,6 +476,8 @@ hr{
 #yellow{
     background-color: #ffd830;
 }
+/* /id for sixth section */
+
 .under-partners{
     background-color: #b4d0e7;
     padding-bottom: 80px;
@@ -361,25 +486,25 @@ hr{
 .under-flex{
     justify-content: space-between;
 }
+
 .under-box{
     margin-top:25px;
     margin-bottom: 80px;
     padding-left: 25px;
    color:#61082b;
 }
+
 .partners-button{
     align-items: center;
     margin-top: 65px;
     border: none;
     margin-right:  25px;
-}
-
-    
+}   
 
 .questions{
-   margin-top: 50px;
-   
+   margin-top: 50px;   
 }
+
 strong{
     font-size: 18px;
 }
@@ -387,14 +512,15 @@ strong{
 .check-question{
     margin-left: 450px;
 }
+/* /rules for sixth section */
 /* main */
 
 /* footer */
 footer{
     background-color: black;
-    margin: auto;
-    
+    margin: auto;    
 }
+
 .link-footer{
     width: calc(100% / 5 );
     color: white;
@@ -406,19 +532,22 @@ footer{
     line-height: 110px;
     
 }
+
 a{
     text-decoration: none;
     color: inherit;
     line-height: 45px;
-    margin-left: 15px;
-    
+    margin-left: 15px;    
 }
+
 .link-footer.footer-special{
     margin-bottom: 150px;
 }
+
 .list-link{
     list-style: none;
 }
+
 .hr-link{
     margin-top: 150px;
     margin-bottom: 40px;
@@ -429,4 +558,5 @@ a{
     margin-left: 15px;
     margin-right: 10px
 }
+
 /* footer */
